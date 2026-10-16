@@ -1,0 +1,47 @@
+body {background-color: #0b1ef6;
+    background-image: linear-gradient(to bottom, cornflowerblue, #0b1ef6);
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: Arial, sans-serif;
+}
+
+.page-header {
+    background-image: linear-gradient(to right , #f6e60b, rgb(129, 234, 31));
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+}
+
+.facts {
+    background-color: midnightblue;
+    border-radius: 12px;
+    color: white;
+}
+
+.facts h2 {
+    color: coral;
+}
+
+.facts ul {
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+.star {
+    width: 60px;
+    height: 60px;
+    background-color: gold;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.footer-text {
+    text-align: center;
+    color: coral;
+}
