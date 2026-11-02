@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Weather App</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            text-align: center;
+            background-color: #dff9fb;
+            background-image: radial-gradient(#74b9ff 2px, transparent 2px);
+            background-size: 30px 30px;
+        }
+
+        h1 {
+            color: #0984e3;
+            padding: 20px;
+        }
+
+        .card {
+            width: 350px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 20px;
+            color: white;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            box-shadow: 3px 5px 15px gray;
+        }
+
+        .weather {
+            font-size: 70px;
+            animation: float 2s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .days {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 25px;
+        }
+
+        .day {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 2px 2px 5px gray;
+        }
+
+        .day:hover {
+            transform: translateY(-5px);
+            background: #74b9ff;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🌤️ My Weather App</h1>
+
+    <div class="card">
+        <h2>Today's Weather</h2>
+        <div class="weather">☀️</div>
+        <h1>28°C</h1>
+        <h3>Sunny Day</h3>
+        <p>Cairo, Egypt</p>
+    </div>
+
+    <h2>Weekly Forecast</h2>
+
+    <div class="days">
+        <div class="day">
+            <h3>Mon</h3>
+            ☀️
+            <p>28°C</p>
+        </div>
+
+        <div class="day">
+            <h3>Tue</h3>
+            🌤️
+            <p>25°C</p>
+        </div>
+
+        <div class="day">
+            <h3>Wed</h3>
+            🌧️
+            <p>22°C</p>
+        </div>
+
+        <div class="day">
+            <h3>Thu</h3>
+            ☀️
+            <p>30°C</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

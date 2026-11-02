@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Donation Form</title>
+</head>
+
+<body>
+
+    <h1>School Library - Book Donation Form</h1>
+
+    <!-- Part 1: The overall form wrapper -->
+    <form action="#" method="POST">
+
+        <!-- Part 1: Donor Section -->
+        <fieldset>
+            <legend>Donor Information</legend>
+
+            <p>
+                <label for="donor-name">Full Name:</label>
+                <input type="text" id="donor-name" name="donorName" required>
+            </p>
+
+            <p>
+                <label for="donor-id">Student/Staff ID (Password protected field):</label>
+                <input type="password" id="donor-id" name="donorID" required>
+            </p>
+
+            <p>
+                <label for="donation-date">Donation Date:</label>
+                <input type="date" id="donation-date" name="donationDate" required>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <!-- Part 2: Book Details Section -->
+        <fieldset>
+            <legend>Book Details</legend>
+
+            <p>
+                <label for="book-category">Book Category:</label>
+                <select id="book-category" name="bookCategory">
+                    <option value="fiction">Fiction</option>
+                    <option value="science">Science & Technology</option>
+                    <option value="history">History</option>
+                    <option value="biography">Biography</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Book Condition:</label><br>
+                <input type="radio" id="cond-new" name="bookCondition" value="new">
+                <label for="cond-new">New</label><br>
+
+                <input type="radio" id="cond-good" name="bookCondition" value="good" checked>
+                <label for="cond-good">Good (Lightly Used)</label><br>
+
+                <input type="radio" id="cond-fair" name="bookCondition" value="fair">
+                <label for="cond-fair">Fair (Well Worn)</label>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <!-- Part 3: Book Title or Notes -->
+        <fieldset>
+            <legend>Book Title & Additional Notes</legend>
+            <p>
+                <label for="book-notes">Enter the book title(s) or any specific notes about your donation:</label><br>
+                <textarea id="book-notes" name="bookNotes" rows="4" cols="50" placeholder="Type here..."></textarea>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <!-- Part 4: Drop-off Days and Submission -->
+        <fieldset>
+            <legend>Drop-off Preferences</legend>
+            <p>
+                <label>Select preferred drop-off days:</label><br>
+                <input type="checkbox" id="day-sunday" name="dropoffDays" value="sunday">
+                <label for="day-sunday">Sunday</label><br>
+
+                <input type="checkbox" id="day-tuesday" name="dropoffDays" value="tuesday">
+                <label for="day-tuesday">Tuesday</label><br>
+
+                <input type="checkbox" id="day-thursday" name="dropoffDays" value="thursday">
+                <label for="day-thursday">Thursday</label>
+            </p>
+
+            <p>
+                <input type="submit" value="Donate">
+            </p>
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

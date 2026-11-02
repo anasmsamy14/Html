@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cartoon Character Card</title>
+
+    <!-- Internal CSS inside the <style> tag in the <head> section -->
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Card container selector */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Character Image selector */
+        .character-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ff4a5a;
+        }
+
+        /* Heading selector changing color and text weight */
+        h1 {
+            color: #2c3e50;
+            font-weight: 700;
+            margin: 15px 0 5px 0;
+        }
+
+        /* Subheading selector */
+        h2 {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin: 0 0 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Webpage Content -->
+    <div class="card">
+        <!-- Replace the src with your chosen character's image link -->
+        <img src="https://placeholder.com" alt="Cartoon Character" class="character-img">
+
+        <h1>Character Name</h1>
+        <h2>From: Show/Movie Name</h2>
+
+        <!-- Inline CSS to style exactly one paragraph element directly -->
+        <p style="color: #ff4a5a; font-weight: bold; font-size: 0.95rem;">
+            "Superpower or famous catchphrase goes here!"
+        </p>
+    </div>
+
+</body>
+
+</html>

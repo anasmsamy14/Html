@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Ice Cream Shop</title>
+
+    <style>
+        body {
+            background-color: #fff0f5;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff69b4;
+        }
+
+        .menu {
+            background-color: white;
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        ul>li {
+            background-color: #ffe4ec;
+            padding: 12px;
+            margin: 10px;
+            list-style: none;
+            border-radius: 10px;
+        }
+
+        li:hover {
+            background-color: #ffb6c1;
+            color: white;
+            cursor: pointer;
+        }
+
+        li:first-child {
+            background-color: #b5ead7;
+        }
+
+        p::first-letter {
+            color: #ff69b4;
+            font-size: 30px;
+        }
+
+        h2+p {
+            color: #ff69b4;
+        }
+
+        button:hover {
+            background-color: #ff69b4;
+            color: white;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #b5ead7;
+            border: none;
+            border-radius: 10px;
+        }
+
+        h2::after {
+            content: " 🍦";
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🍦 Sweet Ice Cream Shop 🍦</h1>
+
+    <div class="menu">
+        <h2>Our Menu</h2>
+
+        <p>Choose your favourite flavour!</p>
+
+        <ul>
+            <li>🍓 Strawberry - $3</li>
+            <li>🍫 Chocolate - $4</li>
+            <li>🍦 Vanilla - $2</li>
+            <li>🥭 Mango - $3</li>
+            <li>🍪 Cookies and Cream - $5</li>
+        </ul>
+
+        <button>Order Now</button>
+    </div>
+
+</body>
+
+</html>
