@@ -1,0 +1,44 @@
+body {
+    background-color: linen;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+h2 {
+    color: chocolate;
+    margin-top: 25px;
+}
+
+abbr {
+    color: chocolate;
+    text-decoration: underline;
+    cursor: help;
+}
+
+q {
+    font-style: italic;
+    color: dimgray;
+    padding-left: 15px;
+    border-left: 4px solid chocolate;
+    font-style: italic;
+    text-align: left;
+    display: inner-block;
+}
+
+mark {
+    background-color: pink;
+    color: rgb(128, 128, 232);
+}
+
+hr {
+    border-color: chocolate
+}
+
+.display-1::first-letter {
+    font-size: 7.0 rem;
+    font-weight: bold;
+    color: rgb(129, 129, 233);
+    font-family: 'Terbuchet Ms';
+    font-style: oblique
+}
